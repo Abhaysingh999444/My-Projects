@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="IE=chrome">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script type="text/javascript">
+    function cap(){
+        var alpha=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z","a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var b=alpha[Math.floor(Math.random()*62)];
+        var c=alpha[Math.floor(Math.random()*62)];
+        var d=alpha[Math.floor(Math.random()*62)];
+        var e=alpha[Math.floor(Math.random()*62)];
+        var f=alpha[Math.floor(Math.random()*62)];
+        var sum=b+c+d+e+f;
+        document.getElementById("readonly").value=sum;
+    }
+    function validcap(){
+        var s1=document.getElementById("readonly").value;
+        var s2=document.getElementById("captchano").value;
+        if(s1==s2)
+        {
+            alert(" Login successfull");
+            return true;
+        }
+        else{
+            alert("please enter valid captcha");
+            return false;
+        }
+    }
+</script>
+</head>
+<style>
+    body{
+        background-image:url("ugi.jpg");
+        background-size: 100% 100vh;
+        background-repeat:no-repeat;
+        animation: slideshow 5s infinite;
+    }
+    @keyframes slideshow {
+        0% {
+            background-image: url("ugi.jpg");
+        }
+        50% {
+            background-image: url("audi.jpg");
+        }
+        100% {
+            background-image: url("library.jpg");
+        }
+    }
+    .pre{
+        color: #fff;
+        margin-top: -30px;
+        margin-left:20px;
+        font-family: initial;
+        font-size :12px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width:450px;
+        border: 1px solid black;
+        margin-top: 18px;
+        margin-left:250px;
+        background-color: rgba(48,64,113,.72);
+        visibility:visible;
+        color:#fff;
+         }
+         .para{
+            margin-top: -5px;
+            color: white;
+            
+            
+            
+         }
+         .footer{
+            color:#fff;
+            margin-left:20px;
+            margin-right:20px;
+            font-size: 12px;
+        }
+        .erpbox{
+            display: flex;
+        flex-direction: column;
+        height: 600px;
+        width:350px;
+        border: 1px solid black;
+        margin-top: -601px;
+        margin-left:701px;
+        background-color: #fff;
+        visibility:visible;
+        color:#fff;
+        
+        }
+         .erplogo{
+            margin:10px;
+            margin-left:100px;
+         }
+         #choosecollege{
+            height:33px;
+            width:220px;
+            margin-left:80.9px;
+           
+            margin-top:-26px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+         }
+         #id{
+            height:33px;
+            width:215px;
+            margin-left:80.9px;
+            margin-top:-30px;
+            
+         
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border:0.1px solid black;
+         }
+         #pass{
+            height:33px;
+            width:215px;
+            margin-left:80.9px;
+            margin-top:-40px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border:0.1px solid black;
+         }
+         .captcha{
+            margin-top:20px;
+            height:45px;
+            width:240px;
+            margin-left:60px;
+            margin-top:30px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border:0.1px solid #000000;
+            background-color: rgb(195, 189, 189);
+           
+         }
+         #readonly{
+            height: 43px;
+            width:160px;
+            margin-left:25px;
+            font-size:37px;
+            background: "spray.jpg";
+            border:none;
+            letter-spacing: 1px;
+            color:red;
+            border-radius:5px 0 0 5px;
+            background-image: url("spray.jpg");
+
+         }
+         #refresh{
+            margin-left: 207.5px;
+            margin-top:-42px;
+            border:1px solid black;
+            width:15px;
+            height:15px;
+         }
+         #refresh img {
+            cursor:pointer;
+         }
+         #speaker{
+            margin-left: 207px;
+            margin-top:1px;
+            border:1px solid black;
+            width:15px;
+            height:14px;
+         }
+         
+        
+         #captchano{
+            position: relative;
+            top:-32px;
+            height:34px;
+            width:215px;
+            margin-left:23.8px;
+            margin-top:-20px;
+            border:0.1px solid black;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border:0.1px solid black;
+            color:black;
+         }
+         .signbutton{
+            color:#fff;
+            background-color: green;
+            height:30px;
+            width:250px;
+            margin-top:-25px;
+            cursor: pointer;
+            border:1px solid green;
+            border-radius:5px;
+            transition:-5s;
+         }
+         button:hover{
+            background-color:grey;
+         }
+         .signup{
+            color:#fff;
+            background-color: rgb(81, 168, 202);
+            height:30px;
+            width:250px;
+            margin-top:20px;
+            cursor: pointer;
+            border:1px solid rgb(81, 168, 202) ;
+            border-radius:5px;
+         }
+         
+</style>
+<body >
+    <div class="flex">
+    <h1 class="para"><strong><pre> Welcome to United Group of <br> Institution</pre></strong></h1>
+    <pre class="pre">
+The United Group,founded by late Shri Shiv Ram Das Gulati in 1951 emerged
+from a transport business to the giants in the fields of education,services,
+transportation and journalism.The group made a mammoth leap in the
+education arena in the mid 80s by pioneers in computer education.<br>
+Now,with 08 well established institutes in Allahabad and Greater Noida,
+over 11200 students and more than 750 faculty members, the United 
+Group of Instituitons is poised to reach the next level providing the best 
+technical education.Our establishment offers NBA accredited courses, 
+Quality recognised by the World Bank and boasts of more than 14000 alumni
+base.Our placement scenario is booming with over 11400 jobs already
+offered.......
+</pre>
+<footer class="footer">
+    <p>For more Details</p>
+    <hr>
+    
+    <button style="
+        background-color: rgb(255, 0, 0);
+        margin-left: 150px;
+        color: #fff;
+        font-size: 12px;
+        border: none; 
+        border-radius: 5px; 
+        padding: 5px 10px; 
+        cursor: pointer; 
+        margin-top:10px;
+        margin-bottom:10px"> Click Here...</button>
+    <p>For any support queries please contact us at:</p> 
+    <hr>
+    <span><img src="phone.png" alt="phone-icon" style="width:15px;height:15px;margin-right:5px">1800 3131 808,</span> 
+    <span><img src="msg.png" alt="email-icon" style="width:15px;height:15px;margin-right:5px;color:yellow">info@united.ac.in(ALD)</span>
+</footer>
+</div>
+<div class="erpbox">
+    <div class="erplogo"><img src="erp logo.png" alt="erp logo" style="width:200px;height:80px;margin-right:5px"></div>
+    <hr>
+    <div class="univ"><img src="univ.jpg" alt="univ logo" style="width:20px;height:30.3px;margin-left:60px; padding-left:-10px;padding-top:-5px;margin-bottom:-10px;border-top-left-radius:10px;border-bottom-left-radius:10px; border:1px solid black;background:grey"></div>
+    <select name="college" id="choosecollege">
+        <option>Select college</option>
+        <option>United college of Engineering and Research</option>
+        <option>United college of Pharmacy</option>
+        <option>United Institute of Management</option>
+        <option>United Institute of Management(FUGS)</option>
+        <option>United Institute of Pharmacy</option>
+        <option>United Institute of Technology</option>
+    </select>
+     <div><img src="community.webp" alt="univ logo" style="width:20px;height:35px;margin-left:60px;margin-top:25px;margin-bottom:-10px;border-top-left-radius:10px;border-bottom-left-radius:10px; border:1px solid black;background:grey"></div>
+    <input type="number" id="id" placeholder="Student ID No"> 
+    <div><img src="lock.webp" alt="lock logo" style="width:20px;height:35px;margin-left:60px;margin-top:30px;border-top-left-radius:10px;border-bottom-left-radius:10px; border:1px solid black;background:grey"></div>
+    <input type="password" id="pass" placeholder="Password">
+    <div class="captcha">
+        <input type="text" id="readonly" readonly="readonly">
+        <div id="refresh"> <img src="refresh.webp" width="15px" onclick="cap()"></div>
+        <div id="speaker"> <img src="speaker.jpg" width="15px" height="14px" ></div>
+        <div> <img  src="search.png" style="width:20px;height:36px;margin-left:3px;margin-top:25px;border-top-left-radius:10px;border-bottom-left-radius:10px; border:1px solid black;background:grey" ></div>
+        <input type="text" id="captchano" placeholder="Enter above Code">
+        <button class="signbutton" onclick="validcap()">Sign In</button>
+        <button class="signup">Sign Up / Forgot Password</button>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
